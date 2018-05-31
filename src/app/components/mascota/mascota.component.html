@@ -1,0 +1,53 @@
+<header class="masthead" style="background-image: url('../../../assets/images/bg.jpg')">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 col-md-10 mx-auto">
+        <div class="overlay">
+          <h1>Perros perdidos UWU</h1>
+          <span>Encuentra a tu ser querido</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<div class="container">
+  <div class="row">
+    <div class="col-lg-9">
+      <h4>Mascotas perdidas</h4>
+    </div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-lg-3 ml-2">
+    <h3>Razas de Perro</h3>
+    <ul class="list-group">
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Cras justo odio
+        <span class="badge badge-primary badge-pill">14</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Dapibus ac facilisis in
+        <span class="badge badge-primary badge-pill">2</span>
+      </li>
+      <li class="list-group-item d-flex justify-content-between align-items-center">
+        Morbi leo risus
+        <span class="badge badge-primary badge-pill">1</span>
+      </li>
+    </ul>
+  </div>
+  <div class="col-lg-6 mb-3">
+    <div class="row">
+      <div class="col-md-3" *ngFor="let pet of pet">
+        <div class="card card-d">
+          <img src="{{pet.image}}" class="card-img-top">
+          <div class="card-body">
+            <h5 class="card-title">{{pet.title}}</h5>
+            <p>{{pet.owner}}</p>
+            <a href="#" class="btn btn-primary">LOL</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
